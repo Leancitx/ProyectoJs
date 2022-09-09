@@ -6,7 +6,7 @@ while(edad >18 || edad <80){
         }
     }
 */
-
+const contenedorProductos = document.getElementById("productos")
 class Producto{
     constructor (nombre, precio, stock){
         this.nombre = nombre;
@@ -14,34 +14,21 @@ class Producto{
         this.stock = stock;
     }
 }
-const voz = new Producto("microfono", 17000, "disponible")
-const interfaz = new Producto("mixer", 60000, "disponible")
-const setup = new Producto("soporte", 15000,"disponible")
-const video = new Producto("camara", 42000, "disponible")
-const productos = [voz, interfaz, setup, video];
+const producto1 = new Producto("mic-rode", "10000", "disponible")
+const producto2 = new Producto("mic-dual", "13000", "disponible")
+const producto3 = new Producto("mic-completo", "50000","disponible")
+const producto4 = new Producto("set-completo", "100000", "disponible")
+const producto5 = new Producto("mixer", "70000", "disponible")
+const productos = [producto1, producto2, producto3, producto4, producto5];
 console.table(productos)
 
- 
-function resta(precioOriginal, descuentoProducto){
-    return precioOriginal - precioOriginal*descuentoProducto%100;
-}
+let carrito = []
 
-let descuento = 10
+productos.forEach(() =>{
+let boton = document.getElementsById("boton")
+ boton.addEventlistener('click', ()=>{
+    agregarAlCarrito(Producto.id)
+    console.table(carrito)
+})
+})
 
-
-do{
-    codigo = prompt("ingrese su codigo")
-
-    if(codigo == "proyectoJs"){
-  
-        productos.forEach((elemento)=> {
-           elemento.precio = resta(elemento.precio, descuento) 
-        });
-
-      } else {
-        alert("codigo incorrecto")
-    }
-
-}   while(codigo != "proyectoJs")
-
- console.table(productos)

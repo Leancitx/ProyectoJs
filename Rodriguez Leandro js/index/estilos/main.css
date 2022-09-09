@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    background: rgb(34,193,195);
+    background: linear-gradient(348deg, rgba(34,193,195,1) 0%, rgba(253,177,45,1) 100%);
+    
+    
+    }
+    h1{
+    
+        display: flex   ;
+        font-family: 'Poppins', sans-serif;
+        justify-content: center ;
+        margin-bottom: 0%;
+    }
+    
+    main{
+      
+    background: linear-gradient(to bottom, #414345, #232526); 
+    }
+    p h2{
+        font-family: 'Poppins', sans-serif;
+    }
+
+/*productos*/
+.merch{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+.card-venta{
+    display: flex;
+    justify-content: center;
+    width: min-content;
+    
+}
+.card-edit{
+    margin: 25px;
+    width: min-content;
+   flex-wrap: wrap;
+}
+.kit-card{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px;
+flex-wrap: wrap;
+
+}
+.card{
+    background: rgb(34,193,195);
+    background: linear-gradient(348deg, rgba(34,193,195,1) 0%, rgba(253,177,45,1) 100%);
+}
+    
+
+
+
+
+.card:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 4);
+    transform: translateY(3%);
+    background-color: #c2c1c8;
+}
+
+
+
+footer{
+    grid-area: footer;
+   background: rgb(34,193,195);
+    background: linear-gradient(348deg, rgba(34,193,195,1) 0%, rgba(253,177,45,1) 100%);
+}
+.iconosWeb{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width: 800px){
+}
+
+
+@media (max-width: 400px){
+ 
+          
+        
+        /*productoss*/
+        .card-venta{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .kit-card{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .mixer-img{
+            width: min-content;
+        }
+        .kit-card{
+            width: min-content;
+        }
+    }

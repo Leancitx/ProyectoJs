@@ -1,0 +1,36 @@
+[
+    {
+         "precio": 9000,
+         "id": 1,
+         "nombre": "rodeMic",
+         "stock": "disponible"
+        },
+    { 
+        "precio": 13000,
+        "id": 2,
+        "nombre":  "Dual Mic",
+        "stock": "disponible"
+
+},
+{ 
+        "precio": 25000,
+        "id": 3,
+        "nombre":  "Mic completo",
+        "stock": "disponible"
+
+},
+{ 
+        "precio": 150000,
+        "id": 4,
+        "nombre":  "set completo",
+        "stock": "disponible"
+
+},
+{ 
+        "precio": 70000,
+        "id": 5,
+        "nombre":  "mixer",
+        "stock": "disponible"
+
+}]
+
